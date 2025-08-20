@@ -1,0 +1,227 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+.container{
+    flex:1;
+}
+/* NAVBAR */
+.navbar{
+    height:5rem;
+    background-color:white;
+}
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+/* footer */
+.f-info-links a{
+   text-decoration:none;
+   color:#222222;
+}
+.f-info-links a:hover{
+   text-decoration:underline;
+}
+.f-info{
+    display:flex;
+    height:8rem;
+    background-color:#ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items:center; */
+}
+.f-info-links{
+    width:100%;
+}
+.f-info-socials , .f-info-brand{
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.f-info{
+    text-align: center;
+}
+/* card */
+.listing-card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius:1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding:0 !important
+}
+.card-text p{
+    font-weight:400 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* card effect */
+.card-img-overlay{
+    opacity:0;
+}
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color:white;
+}
+.add-btn{
+    background-color:#fe424d !important;
+    border: none !important;
+}
+/* edit page */
+.edit-btn{
+    background-color:#fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img{
+    height:30vh;
+}
+.btns{
+    display:flex;
+}
+.show-card{
+    padding-left:0;
+    padding-right:0;
+}
+/* hamberg menu */
+@media (max-width: 768px) {
+  .mobile-nav {
+    background-color: #fe424d; /* Light orange background */
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .mobile-nav .nav-link {
+    border-bottom: 1px solid #e33b45;
+    padding: 8px 0;
+    color:whitesmoke;
+  }
+
+  .mobile-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-nav .nav-link:hover {
+    background-color: #9a7811;
+    border-radius: 3px;
+  }
+}
+/* 📱 Mobile responsive styles */
+@media (max-width: 768px) {
+  /* Title */
+  .col-8.offset-3 {
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  /* Image */
+  .show-img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  /* Container without card look */
+  .show-card {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Buttons row */
+/* Center Edit + Delete buttons */
+.btns {
+  display: flex;
+  justify-content: center; /* centers them horizontally */
+  gap: 1rem;               /* space between buttons */
+  margin: 1rem 0;
+}
+
+.btns .btn {
+  flex: 0 0 auto;          /* keep natural button size */
+  min-width: 100px;        /* consistent width */
+  text-align: center;
+}
+
+  /* Review form wrapper */
+  .col-8.offset-3.mb-3 {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 1rem;
+  }
+
+  /* Review cards */
+  .row .card.col-5 {
+    width: 100% !important;
+    margin: 0 0 1rem 0 !important;
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+  }
+}
+
+/* 📱 Mobile: refine styles */
+@media (max-width: 768px) {
+  /* ✅ Divider under Explore link */
+  .navbar .mobile-nav .nav-link {
+    border-bottom: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+  }
+
+  /* ✅ Move search bar above menu (same as before) */
+  .navbar .mobile-nav form {
+    order: -1;
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.5rem 0.75rem 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* ✅ Input */
+  .navbar .mobile-nav .search-input {
+    flex: 1;
+    height: 36px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+  }
+
+  /* ✅ Button with border around icon */
+  .navbar .mobile-nav .search-btn {
+    height: 36px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc; /* add border */
+    padding: 0 0.75rem;
+  }
+
+  .navbar .mobile-nav .search-btn i {
+    margin-right: 0.4rem;
+  }
+}
+
+
